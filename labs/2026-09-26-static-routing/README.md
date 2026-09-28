@@ -8,6 +8,7 @@
 Configure two routers with static routes so that devices on separate networks can communicate with each other.
 
 ## Topology
+![Network topology: PC0 - Router0 - Router1 - PC1](topology.png)
 
 PC0 -- Router0 -- Router1 -- PC1
 
