@@ -1,3 +1,4 @@
+
 # Lab: 2-Router Static Routing
 
 **Date:** 2026-09-26
@@ -24,12 +25,16 @@ The link between Router0 and Router1 uses a /30 subnet — just enough for the t
 ## Configuration
 
 **Router0** — specific static route to reach PC1's network:
-ip route 192.168.3.0 255.255.255.0 10.0.0.2
 
+```
+ip route 192.168.3.0 255.255.255.0 10.0.0.2
+```
 
 **Router1** — default route back toward Router0:
-ip route 0.0.0.0 0.0.0.0 10.0.0.1
 
+```
+ip route 0.0.0.0 0.0.0.0 10.0.0.1
+```
 
 ## Verification
 Confirmed connectivity end-to-end with `ping` between PC0 and PC1, and verified both routes with `show running-config` on each router.
